@@ -26,7 +26,7 @@ function handleCredentialResponse(response) {
     .then(data => {
       console.log("User logged in:", data);
       // redirect or store user info
-      window.location.href = "rip-current.html";
+      window.location.href = "dashboard.html";
     })
     .catch(err => console.error(err));
 }

@@ -1,0 +1,79 @@
+[
+  {
+    "id": "grandhaven",
+    "name": "Grand Haven State Park Beach",
+    "city": "Grand Haven",
+    "lake": "Michigan",
+    "bacteria": {
+      "ecoli": 210,
+      "status": "Advisory",
+      "message": "Elevated bacteria levels. Use caution before swimming"
+    }
+  },
+  {
+    "id": "muskegon",
+    "name": "Muskegon State Park Beach",
+    "city": "Muskegon",
+    "lake": "Michigan",
+    "bacteria": {
+      "ecoli": 90,
+      "status": "Safe",
+      "message": "Water quality is within safe swimming limits"
+    }
+  },
+  {
+    "id": "sleepingbear",
+    "name": "Sleeping Bear Dunes Beach",
+    "city": "Empire",
+    "lake": "Michigan",
+    "bacteria": {
+      "ecoli": 70,
+      "status": "Safe",
+      "message": "Conditions are safe for swimming"
+    }
+  },
+  {
+    "id": "mackinaw",
+    "name": "Mackinaw City Beach",
+    "city": "Mackinaw City",
+    "lake": "Huron",
+    "bacteria": {
+      "ecoli": 320,
+      "status": "Closed",
+      "message": "High bacteria levels. Swimming not recommended"
+    }
+  },
+  {
+    "id": "tawas",
+    "name": "Tawas Point State Park Beach",
+    "city": "East Tawas",
+    "lake": "Huron",
+    "bacteria": {
+      "ecoli": 110,
+      "status": "Safe",
+      "message": "Water conditions are acceptable"
+    }
+  },
+  {
+    "id": "stclair",
+    "name": "Lake St Clair Metropark Beach",
+    "city": "Harrison Township",
+    "lake": "St Clair",
+    "bacteria": {
+      "ecoli": 85,
+      "status": "Safe",
+      "message": "Water quality is within safe limits"
+    }
+  },
+  {
+    "id": "sterling",
+    "name": "Sterling State Park Beach",
+    "city": "Monroe",
+    "lake": "Erie",
+    "bacteria": {
+      "ecoli": 180,
+      "status": "Advisory",
+      "message": "Moderate bacteria levels. Be cautious"
+    }
+  }
+]
