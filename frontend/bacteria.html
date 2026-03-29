@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KYL - Bacteria Warnings</title>
+  <link rel="stylesheet" href="bacteria.css" />
+</head>
+<body>
+  <div class="page">
+    <div class="topbar">
+      <div class="logo">🌊</div>
+      <div>
+        <h1>KYL Dashboard</h1>
+        <p class="subtitle">Know Your Lakes</p>
+      </div>
+    </div>
+
+    <div class="hero">
+      <h2>Welcome to KYL!</h2>
+      <p>Monitor Michigan beach water quality with real beach locations and demo bacteria warning levels.</p>
+    </div>
+
+    <div class="panel">
+      <h3>🦠 Bacteria Warnings</h3>
+      <p class="panel-subtitle">Real Michigan beach locations with sample bacteria warning data for the demo.</p>
+
+      <select id="lakeSelect">
+        <option value="all">All Lakes</option>
+        <option value="Michigan">Lake Michigan</option>
+        <option value="Huron">Lake Huron</option>
+        <option value="Erie">Lake Erie</option>
+        <option value="St Clair">Lake St Clair</option>
+      </select>
+    </div>
+
+    <div class="stats">
+      <div class="stat-card safe-box">
+        <div class="stat-number" id="safeCount">0</div>
+        <div class="stat-label">Beaches Safe</div>
+      </div>
+
+      <div class="stat-card advisory-box">
+        <div class="stat-number" id="advCount">0</div>
+        <div class="stat-label">Under Advisory</div>
+      </div>
+
+      <div class="stat-card closed-box">
+        <div class="stat-number" id="closedCount">0</div>
+        <div class="stat-label">Beaches Closed</div>
+      </div>
+    </div>
+
+    <div id="beachList" class="beach-grid"></div>
+
+    <div class="info-box">
+      <h3>Understanding E. Coli Levels</h3>
+      <div class="info-grid">
+        <div>
+          <strong class="safe-text">Safe (0-235 CFU/100ml)</strong>
+          <p>Water quality is within a normal safe range for recreation.</p>
+        </div>
+        <div>
+          <strong class="advisory-text">Advisory (236-400 CFU/100ml)</strong>
+          <p>Elevated levels. Sensitive groups should avoid swimming.</p>
+        </div>
+        <div>
+          <strong class="closed-text">Closed (400+ CFU/100ml)</strong>
+          <p>Unsafe levels. Swimming should be avoided until retesting.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="bacteria.js"></script>
+</body>
+</html>
