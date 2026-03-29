@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Know Your Lakes Accessibility</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page-shell">
+    <section class="hero">
+      <p class="eyebrow">Michigan Beach Accessibility</p>
+      <h1>Find lakes with beach access details for disabled visitors</h1>
+      <p class="hero-copy">
+        Choose one of seven Michigan lakes to view a featured beach and accessibility details
+        from Google Places, including wheelchair entrance, parking, restroom, and seating data.
+      </p>
+    </section>
+
+    <section class="panel">
+      <label class="label" for="lake-select">Choose a Michigan lake</label>
+      <select id="lake-select" class="select">
+        <option value="">Select a lake</option>
+      </select>
+      <p id="status" class="status">Loading beach accessibility data...</p>
+
+      <article id="report" class="report hidden" aria-live="polite">
+        <div class="report-top">
+          <div>
+            <p id="lake-region" class="kicker"></p>
+            <h2 id="lake-name"></h2>
+            <p id="beach-name" class="beach-name"></p>
+            <p id="updated-at" class="updated-at"></p>
+          </div>
+          <span id="access-badge" class="badge"></span>
+        </div>
+
+        <div class="summary-grid">
+          <div class="summary-card">
+            <p class="summary-label">Wheelchair Entrance</p>
+            <p id="entrance" class="summary-value"></p>
+          </div>
+          <div class="summary-card">
+            <p class="summary-label">Accessible Parking</p>
+            <p id="parking" class="summary-value"></p>
+          </div>
+          <div class="summary-card">
+            <p class="summary-label">Accessible Restroom</p>
+            <p id="restroom" class="summary-value"></p>
+          </div>
+        </div>
+
+        <div class="detail-block">
+          <p><strong>Seating:</strong> <span id="seating"></span></p>
+          <p><strong>Parking options:</strong> <span id="parking-options"></span></p>
+          <p><strong>Address:</strong> <span id="address"></span></p>
+          <p><strong>Google Maps:</strong> <a id="maps-link" href="#" target="_blank" rel="noreferrer">Open place</a></p>
+          <p><strong>Accessibility note:</strong> <span id="note"></span></p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
