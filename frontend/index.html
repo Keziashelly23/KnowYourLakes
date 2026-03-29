@@ -2,15 +2,23 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Welcome</title>
+<title>Know Your Lakes</title>
 <link rel="icon" href="KYLFAVICON.png" type="image/png">
 <style>
+    @font-face{
+        font-family: 'BeachFont';
+        src: url(Tiki\ Tropic.ttf) format('opentype');
+    }
+
+
+
     body {
         margin: 0;
-        font-family: Arial, sans-serif;
+        font-family: 'BeachFont', sans-serif;
         background-color: #e6e6e6;
         height: 100vh;
         position: relative;
+        
     }
 
     /* Login button (top-right) */
@@ -27,7 +35,7 @@
     }
 
     .login-btn:hover {
-        background-color: #ff7d7d;
+        background-color: #FDC0BD;
     }
 
     /* Centered welcome text */
@@ -36,9 +44,16 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        font-size: 28px;
+        font-size: 70px;
         color: #222;
+        font-family: 'BeachFont', sans-serif;
+        letter-spacing: 3px;
+        
     }
+    
+   
+
+
 </style>
 </head>
 <body>
@@ -46,7 +61,7 @@
 <button class="login-btn">LOGIN</button>
 
 <div class="center-text">
-    Welcome to Know Your Lakes!
+    Know Your Lakes
 </div>
 
 </body>
