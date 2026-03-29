@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KYL Dashboard</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f5f7fa;
+    }
+
+    .topbar {
+      width: 100%;
+      background: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 40px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    }
+
+    .logo-section {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo-circle {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: #1e88ff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 18px;
+    }
+
+    .logo-img {
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .logo-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .logo-text h1 {
+      font-size: 18px;
+      color: #1d2b3a;
+      font-weight: bold;
+    }
+
+    .logo-text p {
+      font-size: 15px;
+      color: #6c7a89;
+      margin-top: 2px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+    }
+
+    .alert-button {
+      background: #1e63ff;
+      color: white;
+      border: none;
+      border-radius: 12px;
+      padding: 12px 20px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(30, 99, 255, 0.25);
+      transition: 0.2s;
+    }
+
+    .alert-button:hover {
+      background: #1554de;
+    }
+
+    .nav-item {
+      text-decoration: none;
+      color: #4c5667;
+      font-size: 16px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: 0.2s;
+    }
+
+    .nav-item:hover {
+      color: #1e63ff;
+    }
+
+    .logout {
+      text-decoration: none;
+      color: #4c5667;
+      font-size: 16px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .logout:hover {
+      color: #d62828;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="logo-section">
+        <img src="https://picsum.photos/38" alt="Logo" class="logo-img">
+
+        <div class="logo-text">
+            <h1>KYL Dashboard</h1>
+            <p>Know Your Lakes</p>
+        </div>
+    </div>
+
+    <nav class="nav-links">
+        <!-- <button class="alert-button" onclick="location.href='rip-alerts.html'"> Rip Current Alerts</button> -->
+        <a href='home.html' class="nav-item"> Home</a>  
+        <a href='rip-alerts.html' class="nav-item"> Rip Current Alerts</a>
+        <a href="bacteria.html" class="nav-item"> Bacteria Warnings</a>
+        <a href="beaches.html" class="nav-item"> Accessible Beaches</a>
+        <a href="crowd.html" class="nav-item"> Crowd Meter</a>
+    </nav>
+
+    <a href="logout.html" class="logout"> Logout</a>
+  </header>
+
+</body>
+</html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search your lakes</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #d9d9d9;
+        }
+
+        .header {
+            padding: 20px 20px 25px 20px;
+            background: #d9d9d9;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 24px;
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        .top-bar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .top-bar input {
+            width: 400px;
+            height: 45px;
+            padding: 8px 10px;
+            font-size: 18px;
+            
+            box-sizing: border-box;
+        }
+
+        .top-bar button {
+            height: 45px;
+            padding: 0 18px;
+            font-size: 18px;
+            
+            background: white;
+            cursor: pointer;
+        }
+
+        .top-bar span {
+            font-size: 20px;
+            color: #777;
+        }
+
+        .main {
+            padding: 25px 20px;
+        }
+
+        .layout {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            /* gap: 40px; increase this for more space */
+        }
+        
+        .box {
+            background: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            text-align: center;
+            box-sizing: border-box;
+            margin-bottom: 50px;
+        }
+
+        .text-box {
+            width: 260px;
+            height: 80px;
+            font-size: 18px;
+
+        }
+
+        .title-text-box {
+            width: 260px;
+            height: 80px;
+            font-size: 36px;
+        }
+
+        .image-box {
+            width: 260px;
+            height: 170px;
+            overflow: hidden;
+        }
+
+        .image-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="title">Search your lakes</div>
+
+        <div class="top-bar">
+            <input type="text" placeholder='Local forecast by “City, Street” or Zip code'>
+            <button>Go</button>
+            <span>or</span>
+            <input type="text" placeholder="Search">
+            <button>Go</button>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="layout">
+
+            <!-- Left column -->
+            <div class="column">
+                <div class="box title-text-box">text container</div>
+                <div class="box text-box">text container</div>
+                <div class="box image-box">
+                    <img src="https://picsum.photos/500/300">
+                </div>
+            </div>
+
+            <!-- Right column -->
+            <div class="column">
+                <div class="box image-box">
+                    <img src="https://picsum.photos/501/300">
+                </div>
+                <div class="box title-text-box">text container</div>
+                <div class="box text-box">text container</div>
+            </div>
+
+        </div>
+        <div class="layout">
+
+            <!-- Left column -->
+            <div class="column">
+                <div class="box title-text-box">text container</div>
+                <div class="box text-box">text container</div>
+                <div class="box image-box">
+                    <img src="https://picsum.photos/500/300">
+                </div>
+            </div>
+
+            <!-- Right column -->
+            <div class="column">
+                <div class="box image-box">
+                    <img src="https://picsum.photos/501/300">
+                </div>
+                <div class="box title-text-box">text container</div>
+                <div class="box text-box">text container</div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
+
