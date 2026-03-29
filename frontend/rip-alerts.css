@@ -5,7 +5,8 @@
 body {
   margin: 0;
   min-height: 100vh;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'BeachFont';
+  src: url('Soda Land Free Version.ttf') format('truetype');
   color: #102542;
   background:
     radial-gradient(circle at top, rgba(190, 228, 231, 0.55), transparent 35%),
