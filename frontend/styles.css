@@ -8,7 +8,7 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #102542;
   background:
-    radial-gradient(circle at top, rgba(129, 212, 250, 0.55), transparent 35%),
+    radial-gradient(circle at top, rgba(190, 228, 231, 0.55), transparent 35%),
     linear-gradient(180deg, #eef9ff 0%, #c9ecff 100%);
 }
 
