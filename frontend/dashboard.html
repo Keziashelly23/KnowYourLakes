@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!DOCTYPE html>
-<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="KYLFAVICON.png" type="image/png">
   <title>KYL Dashboard</title>
+
   <style>
     * {
       margin: 0;
@@ -16,12 +15,14 @@
     }
 
     body {
-      background-color: #f5f7fa;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #d9d9d9;
     }
 
     .topbar {
       width: 100%;
-      background-color:#f49f51;
+      background-color: #f49f51;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -35,23 +36,11 @@
       gap: 12px;
     }
 
-    .logo-circle {
+    .logo-img {
       width: 38px;
       height: 38px;
       border-radius: 0%;
-      background: #1e88ff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      font-size: 18px;
-    }
-
-    .logo-img {
-        width: 38px;
-        height: 38px;
-        border-radius: 0%;
-        object-fit: cover;
+      object-fit: cover;
     }
 
     .logo-text {
@@ -75,23 +64,6 @@
       display: flex;
       align-items: center;
       gap: 28px;
-    }
-
-    .alert-button {
-      background: #1e63ff;
-      color: white;
-      border: none;
-      border-radius: 12px;
-      padding: 12px 20px;
-      font-size: 16px;
-      font-weight: 600;
-      cursor: pointer;
-      box-shadow: 0 4px 10px rgba(30, 99, 255, 0.25);
-      transition: 0.2s;
-    }
-
-    .alert-button:hover {
-      background: #1554de;
     }
 
     .nav-item {
@@ -122,202 +94,207 @@
     .logout:hover {
       color: #633d66;
     }
+
+    .header {
+      padding: 20px 20px 25px 20px;
+      background: #d9d9d9;
+    }
+
+    .title {
+      text-align: center;
+      font-size: 24px;
+      color: white;
+      margin-bottom: 15px;
+    }
+
+    .top-bar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .top-bar input {
+      width: 400px;
+      height: 45px;
+      padding: 8px 10px;
+      font-size: 18px;
+      box-sizing: border-box;
+      border-radius: 25px; /* ← add this */
+      border: none;        /* optional: cleaner look */
+      outline: none;       /* optional: removes blue highlight */
+    }
+
+    .top-bar button {
+      height: 45px;
+      padding: 0 18px;
+      font-size: 18px;
+      background: white;
+      cursor: pointer;
+      border-radius: 25px; /* ← add this */
+      border: none;        /* optional */
+    }
+
+    .top-bar span {
+      font-size: 20px;
+      color: #777;
+    }
+
+    .main {
+      padding: 25px 20px;
+    }
+
+    .layout {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+
+    .column {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .box {
+      background: transparent;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: black;
+      text-align: center;
+      box-sizing: border-box;
+      margin-bottom: 50px;
+    }
+
+    .text-box {
+      width: 260px;
+      height: 80px;
+      font-size: 18px;
+    }
+
+    .title-text-box {
+      width: 260px;
+      height: 80px;
+      font-size: 36px;
+    }
+
+    .image-box {
+      width: 260px;
+      height: 170px;
+      overflow: hidden;
+    }
+
+    .image-button {
+      display: block;
+      width: 260px;
+      height: 170px;
+      overflow: hidden;
+      border-radius: 8px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .image-button:hover {
+      transform: scale(1.03);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .image-button img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
   </style>
 </head>
 <body>
 
   <header class="topbar">
     <div class="logo-section">
-        <img src="KYLFAVICON.png" alt="Logo" class="logo-img">
+      <img src="KYLFAVICON.png" alt="Logo" class="logo-img">
 
-        <div class="logo-text">
-            <h1>KYL Dashboard</h1>
-            <p>Know Your Lakes</p>
-        </div>
+      <div class="logo-text">
+        <h1>KYL Dashboard</h1>
+        <p>Know Your Lakes</p>
+      </div>
     </div>
 
     <nav class="nav-links">
-        <!-- <button class="alert-button" onclick="location.href='rip-alerts.html'"> Rip Current Alerts</button> -->
-        <a href='home.html' class="nav-item"> Home</a>  
-        <a href='rip-alerts.html' class="nav-item"> Rip Current Alerts</a>
-        <a href="bacteria.html" class="nav-item"> Bacteria Warnings</a>
-        <a href="beaches.html" class="nav-item"> Accessible Beaches</a>
-        <a href="crowd.html" class="nav-item"> Crowd Meter</a>
+      <a href="home.html" class="nav-item">Home</a>
+      <a href="rip-alerts.html" class="nav-item">Rip Current Alerts</a>
+      <a href="bacteria.html" class="nav-item">Bacteria Warnings</a>
+      <a href="beaches.html" class="nav-item">Accessible Beaches</a>
+      <a href="crowd.html" class="nav-item">Crowd Meter</a>
     </nav>
 
-    <a href="logout.html" class="logout"> Logout</a>
+    <a href="logout.html" class="logout">Logout</a>
   </header>
 
-</body>
-</html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search your lakes</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #d9d9d9;
-        }
+  <div class="header">
+    <div class="title">Search your lakes</div>
 
-        .header {
-            padding: 20px 20px 25px 20px;
-            background: #d9d9d9;
-        }
+    <div class="top-bar">
+      <input type="text" placeholder='Local forecast by “City, Street” or Zip code'>
+      <button>Go</button>
+      <span>or</span>
+      <input type="text" placeholder="Search">
+      <button>Go</button>
+    </div>
+  </div>
 
-        .title {
-            text-align: center;
-            font-size: 24px;
-            color: white;
-            margin-bottom: 15px;
-        }
+  <div class="main">
 
-        .top-bar {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 15px;
-            flex-wrap: wrap;
-        }
-
-        .top-bar input {
-            width: 400px;
-            height: 45px;
-            padding: 8px 10px;
-            font-size: 18px;
-            
-            box-sizing: border-box;
-        }
-
-        .top-bar button {
-            height: 45px;
-            padding: 0 18px;
-            font-size: 18px;
-            
-            background: white;
-            cursor: pointer;
-        }
-
-        .top-bar span {
-            font-size: 20px;
-            color: #777;
-        }
-
-        .main {
-            padding: 25px 20px;
-        }
-
-        .layout {
-            display: flex;
-            justify-content: center;
-            gap: 50px;
-            align-items: flex-start;
-            flex-wrap: wrap;
-        }
-
-        .column {
-            display: flex;
-            flex-direction: column;
-            /* gap: 40px; increase this for more space */
-        }
-        
-        .box {
-            background: transparent;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: black;
-            text-align: center;
-            box-sizing: border-box;
-            margin-bottom: 50px;
-        }
-
-        .text-box {
-            width: 260px;
-            height: 80px;
-            font-size: 18px;
-
-        }
-
-        .title-text-box {
-            width: 260px;
-            height: 80px;
-            font-size: 36px;
-        }
-
-        .image-box {
-            width: 260px;
-            height: 170px;
-            overflow: hidden;
-        }
-
-        .image-box img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-    </style>
-</head>
-<body>
-
-    <div class="header">
-        <div class="title">Search your lakes</div>
-
-        <div class="top-bar">
-            <input type="text" placeholder='Local forecast by “City, Street” or Zip code'>
-            <button>Go</button>
-            <span>or</span>
-            <input type="text" placeholder="Search">
-            <button>Go</button>
+    <div class="layout">
+      <!-- Left column -->
+      <div class="column">
+        <div class="box title-text-box">Rip Current Alerts</div>
+        <div class="box text-box">Check local forecast for rip current conditions</div>
+        <div class="box image-box">
+          <a href="bacteria.html" class="image-button">
+            <img src="bacteria.gif" alt="Bacteria Warnings">
+          </a>
         </div>
+      </div>
+
+      <!-- Right column -->
+      <div class="column">
+        <div class="box image-box">
+          <a href="rip-alerts.html" class="image-button">
+            <img src="RipeCurrent.gif" alt="Rip Current Alerts">
+          </a>
+        </div>
+        <div class="box title-text-box">Bacteria Warnings</div>
+        <div class="box text-box">Check local forecast for bacteria levels</div>
+      </div>
     </div>
 
-    <div class="main">
-        <div class="layout">
-
-            <!-- Left column -->
-            <div class="column">
-                <div class="box title-text-box"> Rip Current Alerts</div>
-                <div class="box text-box"> Check local forecast for rip current conditions </div>
-                <div class="box image-box">
-                    <img src="bacteria.gif">
-                </div>
-            </div>
-
-            <!-- Right column -->
-            <div class="column">
-                <div class="box image-box">
-                    <img src="RipeCurrent.gif">
-                </div>
-                <div class="box title-text-box">Bacteria Warnings</div>
-                <div class="box text-box"> Check local forecast for bacteria levels </div>
-            </div>
-
+    <div class="layout">
+      <!-- Left column -->
+      <div class="column">
+        <div class="box title-text-box">Crowd Meter</div>
+        <div class="box text-box">Check local forecast for crowd levels</div>
+        <div class="box image-box">
+          <a href="crowd.html" class="image-button">
+            <img src="Crowd.gif" alt="Crowd Meter">
+          </a>
         </div>
-        <div class="layout">
+      </div>
 
-            <!-- Left column -->
-            <div class="column">
-                <div class="box title-text-box">Crowd Meter</div>
-                <div class="box text-box"> Check local forecast for crowd levels </div>
-                <div class="box image-box">
-                    <img src="Crowd.gif">
-                </div>
-            </div>
-
-            <!-- Right column -->
-            <div class="column">
-                <div class="box image-box">
-                    <img src="EXPANDED.gif">
-                </div>
-                <div class="box title-text-box">Accessible Beaches</div>
-                <div class="box text-box"> Check local forecast for accessible beach options </div>
-            </div>
-
+      <!-- Right column -->
+      <div class="column">
+        <div class="box image-box">
+          <a href="beaches.html" class="image-button">
+            <img src="EXPANDED.gif" alt="Accessible Beaches">
+          </a>
         </div>
+        <div class="box title-text-box">Accessible Beaches</div>
+        <div class="box text-box">Check local forecast for accessible beach options</div>
+      </div>
     </div>
+
+  </div>
 
 </body>
 </html>
-
