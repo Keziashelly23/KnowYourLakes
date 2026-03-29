@@ -8,6 +8,12 @@ const client = new OAuth2Client("509638925342-g3ffivlgu45uccigoeei7iedgr6f8lhc.a
 
 app.use(express.json());
 
+const bacteriaRoute = require("./routes/bacteria");
+app.use("/api/bacteria", bacteriaRoute);
+
+app.get("/", (req, res) => {
+  res.send("KYL backend running");
+});
 app.post("/auth/google", async (req, res) => {
   const { token } = req.body;
 
