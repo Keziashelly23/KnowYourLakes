@@ -1,0 +1,125 @@
+{
+  "generatedAt": "2026-03-28T23:49:28.866922+00:00",
+  "source": "Open-Meteo Marine API",
+  "lakes": [
+    {
+      "id": "superior",
+      "name": "Lake Superior",
+      "region": "Upper Peninsula",
+      "current": "0.7 m waves, wind chop 0.2 m, moving W",
+      "safety": "Use caution",
+      "waves": "Moderate waves",
+      "note": "Conditions look relatively calm, but shoreline weather can still change quickly.",
+      "advice": "Swim near populated beach areas at Lake Superior and keep a close eye on conditions.",
+      "level": "caution",
+      "updatedAt": "2026-03-28T19:45",
+      "raw": {
+        "waveHeightMeters": 0.7,
+        "windWaveHeightMeters": 0.16,
+        "windWaveDirectionDegrees": 251.0
+      }
+    },
+    {
+      "id": "michigan",
+      "name": "Lake Michigan",
+      "region": "West Michigan",
+      "current": "0.5 m waves, wind chop 0.3 m, moving SW",
+      "safety": "Generally safe",
+      "waves": "Low wave action",
+      "note": "Conditions look relatively calm, but shoreline weather can still change quickly.",
+      "advice": "Lake Michigan looks calmer right now, but keep watching wind and local beach warnings.",
+      "level": "safe",
+      "updatedAt": "2026-03-28T19:45",
+      "raw": {
+        "waveHeightMeters": 0.52,
+        "windWaveHeightMeters": 0.32,
+        "windWaveDirectionDegrees": 203.0
+      }
+    },
+    {
+      "id": "huron",
+      "name": "Lake Huron",
+      "region": "Eastern Michigan",
+      "current": "0.9 m waves, wind chop 0.5 m, moving SW",
+      "safety": "Use caution",
+      "waves": "Moderate waves",
+      "note": "Wind-driven chop may build through the day, especially in exposed areas.",
+      "advice": "Swim near populated beach areas at Lake Huron and keep a close eye on conditions.",
+      "level": "caution",
+      "updatedAt": "2026-03-28T19:45",
+      "raw": {
+        "waveHeightMeters": 0.94,
+        "windWaveHeightMeters": 0.5,
+        "windWaveDirectionDegrees": 238.0
+      }
+    },
+    {
+      "id": "erie",
+      "name": "Lake Erie",
+      "region": "Southeast Michigan",
+      "current": "0.2 m waves, wind chop 0.2 m, moving SW",
+      "safety": "Generally safe",
+      "waves": "Low wave action",
+      "note": "Conditions look relatively calm, but shoreline weather can still change quickly.",
+      "advice": "Lake Erie looks calmer right now, but keep watching wind and local beach warnings.",
+      "level": "safe",
+      "updatedAt": "2026-03-28T19:45",
+      "raw": {
+        "waveHeightMeters": 0.22,
+        "windWaveHeightMeters": 0.2,
+        "windWaveDirectionDegrees": 222.0
+      }
+    },
+    {
+      "id": "st-clair",
+      "name": "Lake St. Clair",
+      "region": "Metro Detroit",
+      "current": "0.1 m waves, wind chop 0.0 m, moving SW",
+      "safety": "Generally safe",
+      "waves": "Low wave action",
+      "note": "Conditions look relatively calm, but shoreline weather can still change quickly.",
+      "advice": "Lake St. Clair looks calmer right now, but keep watching wind and local beach warnings.",
+      "level": "safe",
+      "updatedAt": "2026-03-28T19:45",
+      "raw": {
+        "waveHeightMeters": 0.06,
+        "windWaveHeightMeters": 0.04,
+        "windWaveDirectionDegrees": 247.0
+      }
+    },
+    {
+      "id": "torch",
+      "name": "Torch Lake",
+      "region": "Northern Lower Peninsula",
+      "current": "0.4 m waves, wind chop 0.2 m, moving SW",
+      "safety": "Generally safe",
+      "waves": "Low wave action",
+      "note": "Conditions look relatively calm, but shoreline weather can still change quickly.",
+      "advice": "Torch Lake looks calmer right now, but keep watching wind and local beach warnings.",
+      "level": "safe",
+      "updatedAt": "2026-03-28T19:45",
+      "raw": {
+        "waveHeightMeters": 0.38,
+        "windWaveHeightMeters": 0.22,
+        "windWaveDirectionDegrees": 246.0
+      }
+    },
+    {
+      "id": "muskegon",
+      "name": "Muskegon Lake",
+      "region": "West Michigan inland lake",
+      "current": "0.4 m waves, wind chop 0.3 m, moving SW",
+      "safety": "Generally safe",
+      "waves": "Low wave action",
+      "note": "Conditions look relatively calm, but shoreline weather can still change quickly.",
+      "advice": "Muskegon Lake looks calmer right now, but keep watching wind and local beach warnings.",
+      "level": "safe",
+      "updatedAt": "2026-03-28T19:45",
+      "raw": {
+        "waveHeightMeters": 0.4,
+        "windWaveHeightMeters": 0.26,
+        "windWaveDirectionDegrees": 218.0
+      }
+    }
+  ]
+}
