@@ -90,5 +90,6 @@ Research & Safety Services: lake alerts, bacteria, accessibility - Kezia and Nas
 
 Pitch & Demo: technical presentation and product vision - Kezia and Team
 
-Hackathon Project
+🏆 Hackathon Project
+
 we built KYL during grizzhacks to solve a real-world public safety problem affecting Michigan beach and lake communities.
