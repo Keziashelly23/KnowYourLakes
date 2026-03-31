@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KYL Crowd Meter</title>
+  <link rel="stylesheet" href="crowd.css" />
+</head>
+<body>
+    <header class="topbar"> 
+     <div class="logo-section">
+      <img src="KYLFAVICON.png" alt="Logo" class="logo-img">
+
+      <div class="logo-text">
+        <h1>KYL Dashboard</h1>
+        <p>Know Your Lakes</p>
+      </div>
+    </div>
+
+    <nav class="nav-links">
+      <a href="dashboard.html" class="nav-item">Home</a>
+      <a href="rip-alerts.html" class="nav-item">Rip Current Alerts</a>
+      <a href="bacteria.html" class="nav-item">Bacteria Warnings</a>
+      <a href="accessibility.html" class="nav-item">Accessible Beaches</a>
+      <a href="crowd.html" class="nav-item">Crowd Meter</a>
+    </nav>
+  </header>
+  <div class="crowd-page">
+
+
+    <main class="crowd-main">
+
+      <!-- Welcome Banner -->
+      <section class="crowd-banner">
+        <h1>Welcome to KYL 🌊</h1>
+        <p>Know your lakes to stay safe and avoid crowded spots.</p>
+      </section>
+
+      <!-- Filter Section -->
+      <section class="crowd-filter-card">
+        <div class="crowd-filter-header">
+          <h2>Beach Crowd Meter</h2>
+          <p>Real-time beach occupancy to help you find the perfect spot</p>
+        </div>
+
+        <div class="crowd-filter-row">
+          <div class="crowd-filter-group">
+            <label for="crowdBeachSelect">Select Beach:</label>
+            <select id="crowdBeachSelect">
+              <option value="all">All Beaches</option>
+            </select>
+          </div>
+
+          <div class="crowd-filter-group">
+            <label>View:</label>
+            <div class="crowd-toggle">
+              <button id="crowdCurrentBtn" class="crowd-toggle-btn crowd-toggle-btn-active" type="button">
+                Current
+              </button>
+              <button id="crowdForecastBtn" class="crowd-toggle-btn" type="button">
+                Forecast
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Summary Boxes -->
+      <section class="crowd-summary-grid">
+        <div class="crowd-summary-box crowd-summary-low">
+          <div class="crowd-summary-emoji">😊</div>
+          <div class="crowd-summary-number" id="crowdLowCount">0</div>
+          <div class="crowd-summary-label">Low Crowd</div>
+        </div>
+
+        <div class="crowd-summary-box crowd-summary-moderate">
+          <div class="crowd-summary-emoji">🙂</div>
+          <div class="crowd-summary-number" id="crowdModerateCount">0</div>
+          <div class="crowd-summary-label">Moderate Crowd</div>
+        </div>
+
+        <div class="crowd-summary-box crowd-summary-high">
+          <div class="crowd-summary-emoji">😬</div>
+          <div class="crowd-summary-number" id="crowdHighCount">0</div>
+          <div class="crowd-summary-label">High Crowd</div>
+        </div>
+
+        <div class="crowd-summary-box crowd-summary-very-high">
+          <div class="crowd-summary-emoji">😰</div>
+          <div class="crowd-summary-number" id="crowdVeryHighCount">0</div>
+          <div class="crowd-summary-label">Very High Crowd</div>
+        </div>
+      </section>
+
+      <!-- Beach Cards -->
+      <section id="crowdBeachContainer" class="crowd-cards-grid"></section>
+
+      <!-- Info Section -->
+      <section class="crowd-info-card">
+        <h3>How Crowd Meter Works</h3>
+        <div class="crowd-info-grid">
+          <div>
+            <h4>Real-Time Monitoring</h4>
+            <p>
+              Crowd levels are estimated using parking data, beach cameras, and anonymous mobile data
+              to provide accurate occupancy information.
+            </p>
+          </div>
+
+          <div>
+            <h4>Plan Your Visit</h4>
+            <p>
+              Use the forecast feature to see predicted crowd levels throughout the day and choose the
+              best time for your beach visit.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="crowd.js"></script>
+</body>
+</html>
