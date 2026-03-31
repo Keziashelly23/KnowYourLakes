@@ -1,0 +1,264 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --ink: #16324f;
+  --muted: #52708d;
+  --line: rgba(22, 50, 79, 0.12);
+  --sea: #d9f4ff;
+  --sky: #effbff;
+  --safe: #d8f5e1;
+  --safe-ink: #165b2e;
+  --warn: #fff1c7;
+  --warn-ink: #7f5a00;
+  --soft-shadow: 0 22px 55px rgba(11, 37, 64, 0.14);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'BeachFont';
+  src: url('Soda Land Free Version.ttf') format('truetype');
+  color: var(--ink);
+  background:
+    radial-gradient(circle at top left, rgba(140, 221, 255, 0.9), transparent 28%),
+    linear-gradient(180deg, #f5fdff 0%, #d8f1fb 100%);
+}
+
+.page-shell {
+  width: min(980px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 2.5rem 0 4rem;
+}
+
+.hero {
+  margin-bottom: 2rem;
+}
+
+.eyebrow,
+.label,
+.summary-label,
+.kicker {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.84rem;
+  font-weight: 700;
+  color: #13607b;
+}
+
+.hero h1 {
+  margin: 0.55rem 0 0;
+  max-width: 12ch;
+  line-height: 1;
+  font-size: clamp(2.6rem, 6vw, 4.6rem);
+}
+
+.hero-copy {
+  max-width: 42rem;
+  line-height: 1.7;
+  color: var(--muted);
+}
+
+.panel {
+  padding: 1.4rem;
+  border-radius: 26px;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid var(--line);
+  box-shadow: var(--soft-shadow);
+  backdrop-filter: blur(12px);
+}
+
+.select {
+  width: 100%;
+  margin-top: 0.75rem;
+  padding: 0.95rem 1rem;
+  border-radius: 14px;
+  border: 1px solid rgba(19, 96, 123, 0.22);
+  background: white;
+  font-size: 1rem;
+  color: var(--ink);
+}
+
+.status,
+.updated-at,
+.beach-name {
+  color: var(--muted);
+}
+
+.report {
+  margin-top: 1.5rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.report-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.report-top h2 {
+  margin: 0.35rem 0 0;
+  font-size: 1.9rem;
+}
+
+.beach-name,
+.updated-at {
+  margin: 0.3rem 0 0;
+}
+
+.badge {
+  padding: 0.65rem 0.95rem;
+  border-radius: 999px;
+  font-weight: 700;
+  background: var(--warn);
+  color: var(--warn-ink);
+  white-space: nowrap;
+}
+
+.badge.strong {
+  background: var(--safe);
+  color: var(--safe-ink);
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.25rem 0;
+}
+
+.summary-card,
+.detail-block {
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--sky);
+}
+
+.summary-card {
+  padding: 1rem;
+}
+
+.summary-value {
+  margin: 0.4rem 0 0;
+  font-size: 1.08rem;
+  font-weight: 700;
+}
+
+.detail-block {
+  padding: 1rem 1.1rem;
+  line-height: 1.7;
+}
+
+.detail-block p {
+  margin: 0;
+}
+
+.detail-block p + p {
+  margin-top: 0.7rem;
+}
+
+.detail-block a {
+  color: #0e6287;
+}
+
+@media (max-width: 720px) {
+  .page-shell {
+    width: min(100% - 1rem, 980px);
+    padding-top: 1.5rem;
+  }
+
+  .panel {
+    padding: 1rem;
+  }
+
+  .report-top,
+  .summary-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+.topbar {
+      width: 100%;
+      background-color: #f49f51;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 40px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    }
+
+    .logo-section {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo-img {
+      width: 58px;
+      height: 58px;
+      border-radius: 0%;
+      object-fit: cover;
+    }
+
+    .logo-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .logo-text h1 {
+      font-size: 30px;
+      color: #3a5c59;
+      font-weight: bold;
+    }
+
+    .logo-text p {
+      font-size: 25px;
+      color: #8ec9c3;
+      margin-top: 2px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+    }
+
+    .nav-item {
+      text-decoration: none;
+      color: #c0527e;
+      font-size: 26px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: 0.2s;
+    }
+
+    .nav-item:hover {
+      color: #ffd4e5;
+    }
+
+    .logout {
+      text-decoration: none;
+      color: #c0527e;
+      font-size: 25px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .logout:hover {
+      color: #633d66;
+    }
+
+    .header {
+      padding: 20px 20px 25px 20px;
+      background: #d9d9d9;
+    }

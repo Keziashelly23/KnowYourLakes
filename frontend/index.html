@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Know Your Lakes</title>
+<link rel="icon" href="KYLFAVICON.png" type="image/png">
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+<style>
+    @font-face{
+        font-family: 'BeachFont';
+        /* src: url(Tiki\ Tropic.ttf) format('opentype'); */
+        src: url(Soda\ Land\ Free\ Version.ttf) format('opentype');
+    }
+
+
+
+    body {
+        margin: 0;
+        font-family: 'BeachFont', sans-serif;
+        height: 100vh;
+        position: relative;
+
+        /* Background image */
+        background-image: url("wvaessss.gif");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    /* Login button (top-right) */
+    .login-btn {
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-80%, -50%);
+        padding: 12px 25px;
+        background-color: #f49089;
+        color: black;
+        border: none;
+        cursor: pointer;
+        font-size: 14px;
+        border-radius: 25px;
+        font-family: 'BeachFont', sans-serif;
+    }
+
+    .login-btn:hover {
+        background-color: #FDC0BD;
+    }
+
+    /* Centered welcome text */
+    .center-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 80px;
+        color: #222;
+        font-family: 'BeachFont', sans-serif;
+        letter-spacing: 3px;
+        
+    }
+    
+    .center-text-small {
+        position: absolute;
+        top: 65%;
+        left: 54%;
+        transform: translate(-65%, -50%);
+        font-size: 20px;
+        color: #222;
+        font-family: 'BeachFont', sans-serif;
+        letter-spacing: 3px;
+        
+    }
+   
+
+
+</style>
+</head>
+<body>
+
+<div class="center-text">
+    Know Your Lakes
+</div>
+<div class="center-text-small">
+    <p>
+    Avoid a headache, get to know your lakes!
+    </p>
+</div>
+<button id="googleLogin" class="login-btn">LOGIN</button>
+
+<script src="script.js"></script>
+</body>
+</html>
