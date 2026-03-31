@@ -81,9 +81,14 @@ personalized beach recommendations
 
 👩‍💻 Team Roles
 Frontend Development: UI, responsive design, user flow - Joannie and Madhumitha
+
 Hand-Drawen annimations - Joannie and Madhumitha
+
 Backend Development: APIs, authentication, database - Kezia and Nashitat
+
 Research & Safety Services: lake alerts, bacteria, accessibility - Kezia and Nashitat
+
 Pitch & Demo: technical presentation and product vision - Kezia and Team
-🏆 Hackathon Project
+
+Hackathon Project
 we built KYL during grizzhacks to solve a real-world public safety problem affecting Michigan beach and lake communities.
