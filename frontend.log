@@ -1,10 +1,6 @@
 
 > start:frontend
-> live-server frontend --port=3000
+> live-server frontend --host=localhost --port=3000
 
-[32mServing "frontend" at http://127.0.0.1:3000[39m
+[32mServing "frontend" at http://localhost:3000 (http://::1:3000)[39m
 [36mReady for changes[39m
-[36mChange detected[39m frontend\script.js
-[0mGET /favicon.ico [33m404[0m 30.397 ms - 150[0m
-[0mGET /beach-accessibility.json [33m404[0m 1.347 ms - 163[0m
-[0mGET /beach-accessibility.json [33m404[0m 0.734 ms - 163[0m
