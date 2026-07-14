@@ -35,7 +35,8 @@ app.post("/auth/google", async (req, res) => {
 
     res.json(user);
   } catch (error) {
-    res.status(401).send("Invalid token");
+    console.error("Google token verification failed:", error.message);
+    res.status(401).json({ error: "Google could not verify this login token." });
   }
 });
 

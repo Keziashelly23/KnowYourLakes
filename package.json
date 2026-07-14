@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start:backend": "node backend/node.js",
+    "start:backend": "node --use-system-ca backend/node.js",
     "start:frontend": "live-server frontend --port=3000"
   },
   "dependencies": {

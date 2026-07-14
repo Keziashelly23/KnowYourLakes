@@ -1,0 +1,5 @@
+
+> start:backend
+> node --use-system-ca backend/node.js
+
+Server running on port 5000

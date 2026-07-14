@@ -9,24 +9,33 @@ window.onload = function () {
   });
 };
 
-function handleCredentialResponse(response) {
-  const jwt = response.credential;
+async function handleCredentialResponse(response) {
+  const jwt = response?.credential;
 
-  console.log("Google JWT:", jwt);
+  if (!jwt) {
+    alert("Google did not return a login credential. Please try again.");
+    return;
+  }
 
-  // Send this token to your backend
-  fetch("http://localhost:5000/auth/google", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify({ token: jwt })
-  })
-    .then(res => res.json())
-    .then(data => {
-      console.log("User logged in:", data);
-      // redirect or store user info
-      window.location.href = "dashboard.html";
-    })
-    .catch(err => console.error(err));
+  try {
+    const res = await fetch("http://localhost:5000/auth/google", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({ token: jwt })
+    });
+
+    const data = await res.json();
+
+    if (!res.ok) {
+      throw new Error(data.error || "Google login was rejected.");
+    }
+
+    console.log("User logged in:", data);
+    window.location.assign("dashboard.html");
+  } catch (error) {
+    console.error("Login failed:", error);
+    alert(`Login failed: ${error.message}`);
+  }
 }
